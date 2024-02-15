@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[11pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[margin=0.5in, top=0.1cm]{geometry}
@@ -7,153 +7,106 @@
 \usepackage[usenames, dvipsnames]{color}
 \usepackage{xcolor}
 \usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multicol}
+
 
 \graphicspath{{.}}
 
-\headsep = 2pt
-\topmargin = -120pt
-\textheight = 950pt
-\footskip = 50pt
-\title{\textbf{Erick Alejandro Carrillo López} \\
-\textbf{Mail:} erick.carrillo4982@alumnos.udg.mx\\
-\textbf{Tel:} (+52)3319911674
-\quad\quad \href{https://github.com/alecksandr26}{\color{Blue}{Github}}
-\quad\quad \href{https://www.linkedin.com/in/erick-alejandro-carrillo-lopez-988112219/}{\color{Blue}{Linkedin}}
-}
-\date{}
-
 \begin{document}
-\maketitle
+ \thispagestyle{empty}
+\begin{center}
+\Large{\textbf{Erick Alejandro Carrillo López} \\
+  \textbf{Mail:} erickcarrillo1024@outlook.com\\
+  \textbf{Tel:} (+52)3319911674}
+\quad\quad \href{https://github.com/alecksandr26}{\color{blue}{Github}}
+  \quad\quad \href{https://www.linkedin.com/in/erick-alejandro-carrillo-lopez-988112219/}{\color{blue}{Linkedin}}
+\end{center}
+\vspace{-0.5cm}
+\section*{Education}
+\vspace{-0.4cm}
+\titlerule[0.3pt]
+\vspace{-0.4cm}
 
-\begin{minipage}[t]{8cm}
-\vspace*{-2cm}
-\section*{Education:}
-\begin{itemize}
-  \setlength\itemsep{0.01cm}
-\item University of Guadalajara
-\item January 2021 - December 2024
-\item B.S. Computer engineering
-\end{itemize}
-\textbf{Notable Courses:}
-\begin{itemize}
-  \setlength\itemsep{0.01cm}
-\item Data Structures and File Manipulation
-\item Statistics and Numerical Analysis
-\item Computer networking
-\item Computer Architecture
-\item Algorithms
-\end{itemize}
-
-\section*{Certifications:}
-\begin{itemize}
-  \setlength\itemsep{0.01cm}
-\item \textbf{Server linux administration course}\\
-  Completed at Platzi\\
-  Platzi Profile: \href{https://platzi.com/p/windowsky/}{\color{Blue}{Platzi}}
-\item \textbf{Django Courses}\\
-  Completed at Platzi\\
-  Platzi Profile: \href{https://platzi.com/p/windowsky/}{\color{Blue}{Platzi}}
-\item \textbf{Flask Course}\\
-  Completed at Platzi\\
-  Platzi Profile: \href{https://platzi.com/p/windowsky/}{\color{Blue}{Platzi}}
-%% \item \textbf{Git and GitHub course}\\
-%%   Completed at Platzi\\
-%%   Platzi Profile: \href{https://platzi.com/p/windowsky/}{Platzi}
+\begin{multicols}{2}
+  \noindent
+  \textbf{B.S. Computer engineering}\\
+  University of Guadalajara
   
-% \item \textbf{Complete course of Python}\\
-%  Completed at Sololearn\\
-%  Certificate: \href{https://www.sololearn.com/Certificate/1073-18624671/jpg/}{\color{Blue}{Sololearn}}
-  
-%\item \textbf{Definite course of Html and Css}\\
-%  Completed at Platzi\\
-%  Platzi Profile: \href{https://platzi.com/p/windowsky/}{\color{Blue}{Platzi}}
+  \columnbreak
+  \noindent
+  Began in \textbf{January - 2021}\\
+  Expected Graduation \textbf{December -  2024}
+\end{multicols}
+\vspace{-0.3cm}
+\begin{itemize}[noitemsep, nolistsep]
+\item \textbf{GPA:} 3.7/4.0,\quad 90/100
+\item \textbf{Notable Courses:} Data Structures, Algorithms, Database, Statistics and Numerical Analysis,
+  Compiler and Traslation, Theory of Computation, Computer networks, Computer Architecture
+\item \textbf{Clubs:} "Club de Algoritmia CUCEI" (Algorithms club)
+\item \textbf{Awards or Honors:} Acknowledged for exceptional contributions as part of the \textbf{"Eureka"}
+  team, representing the \textbf{University of Guadalajara CUCEI}, at the
+  \textbf{18th National Programming Contest} in October 2023
+
+\end{itemize}
+\vspace{-0.4cm}
+\section*{Projects}
+\vspace{-0.4cm}
+\titlerule[0.3pt]
+\vspace{0.1cm}
+\subsection*{\href{https://github.com/alecksandr26/cnet}{\color{blue}{Complex Neural Networks Framework From Scratch}}:}
+\vspace{-0.3cm}
+\begin{itemize}[noitemsep, nolistsep]
+\item Jul, 2023
+\item Ongoing \textbf{CMake} project exploring the utilization of weighted complex numbers in real-valued
+  \textbf{neural network models} for potential \textbf{cost-effectiveness and accuracy} improvements.
+\item Developed with \textbf{optimized matrix operations} and activation functions for enhanced performance.
+  Compared with numpy's array matrix multiplication and GNU Scientific Library,
+  \textbf{the implementation is slightly faster}.
+  My estimation, based on testing with a six-core processor, suggests an improvement ranging from
+  approximately \textbf{37.841\% to 41.557\%}.
+\item Implemented in pure \textbf{C/C++}, leveraging \textbf{OMP} for parallelize several for loops
+  and \textbf{SIMD} instructions for processor optimization. Unit tested using the
+  \textbf{Google testing framework}.
+\end{itemize}
+\vspace{-0.3cm}
+\subsection*{\href{https://github.com/alecksandr26/unittest-c}{\color{blue}{Unit Testing Framework for C in Linux:}}}
+\vspace{-0.3cm}
+\begin{itemize}[noitemsep, nolistsep]
+\item May, 2023
+\item Pure \textbf{C} project designed to simplify and streamline testing of \textbf{C} projects on
+  \textbf{Linux}, inspired by Python's unit testing library and Google Test.
+\item Offers more than 20 methods for \textbf{assertions and non-fatal assertions}, streamlining the
+  process of creating isolated test cases. Additionally, includes automatic recompilation of test files
+  for improved efficiency.
+\item Developed entirely in \textbf{C} with a \textbf{Makefile} for seamless build automation.
+\end{itemize}
+\vspace{-0.3cm}
+\subsection*{\href{https://github.com/alecksandr26/recipe-app-web}{\color{blue}{Cooking Recipes Web App:}}}
+\vspace{-0.3cm}
+\begin{itemize}[noitemsep, nolistsep]
+\item Feb, 2023
+\item Ongoing project aiming to create a user-friendly platform for sharing cooking recipes.
+\item Features robust user management, allowing users \textbf{to search, upload, and rate recipes}.
+\item Implemented in \textbf{Python} using \textbf{Flask} framework and various \textbf{Flask} libraries.
+  Utilizes \textbf{MariaDB} for the relational database,
+  \textbf{Bootstrap} for frontend development, and \textbf{Python's} default unittesting library.
 \end{itemize}
 
-\section*{Programming And Technologies Skills:}
-\begin{itemize}
-  \setlength\itemsep{0.01cm}
-\item \textbf{C} - Advanced
-\item \textbf{Django} - Beginner  
-\item \textbf{Flask} - Intermediate  
-\item \textbf{Python} - Intermediate
-\item \textbf{C++} - Intermediate
-\item \textbf{Linux} - Intermediate
-\item \textbf{MySql/Postgresql} - Intermediate  
-\item \textbf{Javascript} - Beginner 
-\item \textbf{Html/Css} - Beginner
-\item \textbf{Rust} - Beginner
+\vspace{-0.5cm}
+\section*{Technical Skills}
+\vspace{-0.3cm}
+\titlerule[0.3pt]
+\vspace{0.1cm}
+
+\begin{itemize}[noitemsep, nolistsep]
+\item \textbf{Back-End:} Python, C/C++, Java, Rust, Clisp, Flask and Django.
+\item \textbf{Front-End:} JavaScript, HTML, CSS, BootStrap, ReactJs and Tkinter.
+\item \textbf{DataBase:} MySql, MariaDB, PostgreSQL, SqlServer and FireBase.
+\item \textbf{Developer Tools:} Git, Emacs, Linux environment, CMake and Makefile.
+\item \textbf{Languages:} Spanish(Native), English(Basic).
 \end{itemize}
+\vspace{-0.3cm}
 
-\subsection*{Additional Skills:}
-\begin{itemize}
-  \setlength\itemsep{0.01cm}
-\item \textbf{Languages:}
-  \begin{itemize}[label = {-}]
-  \setlength\itemsep{0.01cm}
-  \item \textbf{Spanish} - Native
-  \item \textbf{English} - Basic 
-  \end{itemize}
-\item \textbf{Soft Skills:}
-  \begin{itemize}[label = {-}]
-  \setlength\itemsep{0.01cm}
-  \item Committed to lifelong learning 
-  \item Fast learner
-  \item Autodidact
-  \item Good leader
-  \end{itemize}
-\end{itemize}
-
-\end{minipage}
-\space
-\space
-\space
-\space
-\space
-\begin{minipage}[t]{8cm}
-  \vspace*{-2cm}
-  
-\section*{Projects:}
-\begin{itemize}
-  \setlength\itemsep{0.01cm}
-
-\item \textbf{Paint in C}(C, Make, Xlib):\\
-  A simple paint like application, made it in C with Xlib.\\
-  \textbf{Link to the project:} \href{https://github.com/alecksandr26/xlib-paint}{\color{Blue}{Github}}
-\item \textbf{Unittesting Framework in C}(C, Make, Valgrind):\\
-  I built my own unittesting framework in c.\\
-  \textbf{Link to the project:} \href{https://github.com/alecksandr26/unittest-c}{\color{Blue}{Github}}\\
-  \textbf{Link to the AUR package:}
-  \href{https://aur.archlinux.org/packages/unittest-c}{\color{Blue}{AUR}}
-\item \textbf{Website}(Python, Flask, Postgresql):\\
-  I built this online app of cooking recipes app with my collaborator
-  \href{https://github.com/Experthor}{\color{blue}{Experthor}}\\
-  \textbf{Link to the project:} \href{https://github.com/alecksandr26/recipe-app-web}{\color{Blue}{Github}}
-\item \textbf{Stl in C}(C, Make, Valgrind):\\
-  It is a based container macro data structure library, focused in static memory, it is in progress.\\
-  \textbf{Link to the code:} \href{https://github.com/alecksandr26/stl-c}{\color{Blue}{GitHub}}
-\item \textbf{Try-Catch in C}(C, Make, Assembly, Valgrind): \\
-  Another simple project which adds the functionality of try and catch to C.\\
-  \textbf{Link to the Code:} \href{https://github.com/alecksandr26/trycatch-c}{\color{Blue}{GitHub}}\\
-  \textbf{Link to the AUR package:} \href{https://aur.archlinux.org/packages/trycatch-c}{\color{Blue}{AUR}}
-\item \textbf{Memory Allocator}(Assembly, Make, Syscalls):\\
-  Simple memory allocator in assemby, made it with pure syscalls, I continue working on it.\\
-  \textbf{Link to the code:} \href{https://github.com/alecksandr26/memory-allocator}{\color{Blue}{GitHub}}
-\item \textbf{Machine learning code}(Fortran, make, valgrind):\\
-  It is an educational repo about AI and its algorithms, it is in progress.\\
-  \textbf{Link to the code:} \href{https://github.com/alecksandr26/fortran-ml}{\color{Blue}{GitHub}}
-\item \textbf{Assertions for Fortran}(Fortran, make, valgrind):\\
-  Another simple project which adds the functionality of assertions to Fortran.\\
-  \textbf{Link to the code:} \href{https://github.com/alecksandr26/assert-fortran-git}{\color{Blue}{GitHub}}\\
-  \textbf{Link to the AUR package:}
-  \href{https://aur.archlinux.org/packages/assert-fortran-git}{\color{Blue}{AUR}}
-\end{itemize}
-
-\section*{Personal Interest:}
-\begin{itemize}
-\item Artificial Intelligence
-\item Math - Science
-\item Physics - Electronics
-\end{itemize}
-
-\end{minipage}
 \end{document}
