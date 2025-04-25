@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\message{ !name(MyResume.tex)}\documentclass[11pt]{article}
 
 \usepackage[ascii]{inputenc}
 \usepackage[margin=0.5in, top=0.1cm]{geometry}
@@ -15,6 +15,9 @@
 \graphicspath{{.}}
 
 \begin{document}
+
+\message{ !name(MyResume.tex) !offset(-3) }
+
  \thispagestyle{empty}
 \begin{center}
 \Large{\textbf{Erick Alejandro Carrillo Lopez} \\
@@ -38,7 +41,7 @@
   \columnbreak
   \noindent
   Began in \textbf{January - 2021}\\
-  Expected Graduation \textbf{December -  2025}
+  Expected Graduation \textbf{June -  2025}
 \end{multicols}
 \vspace{-0.3cm}
 \begin{itemize}[noitemsep, nolistsep]
@@ -104,14 +107,15 @@
 \item Developed entirely in \textbf{C} with a \textbf{Makefile} for seamless build automation.
 \end{itemize}
 \vspace{-0.3cm}
-\subsection*{\href{https://github.com/alecksandr26/mem-c}{\color{blue}{Memory Allocator in C:}}}
+\subsection*{\href{https://github.com/alecksandr26/recipe-app-web}{\color{blue}{Cooking Recipes Web App:}}}
 \vspace{-0.3cm}
 \begin{itemize}[noitemsep, nolistsep]
-\item Developed \textbf{mem-c}, a custom memory allocator in C using a binary heap data structure.
-\item Achieved efficient memory block search with \textbf{O(log n)} worst-case time complexity.
-\item Integrated Linux \texttt{mmap} syscall for dynamic memory allocation.
-\item Implemented support for memory pagination and adjacent chunk merging.
-\item Designed with future enhancements in mind, including garbage collection and arenas.
+\item Feb, 2023
+\item Ongoing project aiming to create a user-friendly platform for sharing cooking recipes.
+\item Features robust user management, allowing users \textbf{to search, upload, and rate recipes}.
+\item Implemented in \textbf{Python} using \textbf{Flask} framework and various \textbf{Flask} libraries.
+  Utilizes \textbf{MariaDB} for the relational database,
+  \textbf{Bootstrap} for frontend development, and \textbf{Python's} default unittesting library.
 \end{itemize}
 
 \vspace{-0.5cm}
@@ -141,3 +145,5 @@
 \end{itemize}
 
 \end{document}
+
+\message{ !name(MyResume.tex) !offset(-149) }
